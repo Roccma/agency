@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<app-head title="Agency"></app-head>
+
+<body>
+    <app-header></app-header>
+    <div class="tween-menu">
+        <div class="back-menu-wrapper">
+            <div class="back-menu"></div>
+        </div>
+        <div class="tween-menu-inner">
+            <div class="tween-menu-btn">
+                <a href="#" class="tween-menu-trigger menu-trigger-close openMenu target" id="target">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                </a>
+            </div>
+            <div class="container-content-menu">
+                <ul class="tween-menu-list">
+                    <li class="item-menu item-menu1"><a class="load-animation" href="index.htm">Home</a></li>
+                    <li class="item-menu item-menu2"><a class="load-animation" href="projects.html">Project</a></li>
+                    <li class="item-menu item-menu3"><a class="load-animation" href="about.html">About</a></li>
+                    <li class="item-menu item-menu4"><a class="load-animation" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="tween-menu-social main-menu-social">
+                <div class="container">
+                    <ul class="bottom-menu">
+                        <li><a href="https://www.behance.net/designtino" class="hover-link social-menu1" target="_blank">Behance</a></li>
+                        <li><a href="https://dribbble.com/tinodesign" class="hover-link social-menu2" target="_blank">Dribbble</a></li>
+                        <li><a href="https://www.facebook.com/tino.agency/" class="hover-link social-menu3" target="_blank">Facebook</a></li>
+                        <!--<li><a href="#" target="_blank">Twitter</a></li>-->
+                        <li><a href="https://www.linkedin.com/company/tino-digital-agency/" class="hover-link social-menu4" target="_blank">Linkedin</a></li>
+                        <li><a href="https://www.instagram.com/tino.agency/" class="hover-link social-menu5" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-block-modal"></div>
+    <div class="modal-popup" id="main-request">
+        <div class="modal-popup-inner">
+            <button class="close-modal"></button>
+            <div class="success-form">
+                <div class="content-success text-center">
+                    <h3 class="h1">Your Message <br> Was Successfully Sent</h3>
+                    <p>Our manager will contact you soon</p>
+                    <a href="index.htm" class="link__left-line">Back To Website</a>
+                </div>
+            </div>
+            <div class="modal-content">
+                <div class="form-cont">
+                    <div class="form-block">
+                        <div class="form-block-inner">
+                            <h1 class="h1">Interested In <br> Our Services?</h1>
+                            <p>Just fill this short form</p>
+                            <form id="ajaxformR" method="get">
+                                <div class="input-row">
+                                    <div class="input-row-inner">
+                                        <div class="custom-dropdown">
+                                            <button class="drop-trigger">
+                                          I need … <span>(kind of service)</span>
+                                      </button>
+                                            <div class="drop-list">
+                                                <div class="drop-list-inner">
+                                                    <div class="drop-item">
+                                                        <div class="checkbox-drop">
+                                                            <input class="type_w" type="checkbox" name="rtype-work1" id="rtype1" value="Web design">
+                                                            <label for="rtype1">Web design</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="checkbox-drop">
+                                                            <input class="type_w" type="checkbox" name="rtype-work2" id="rtype2" value="App design">
+                                                            <label for="rtype2">App design</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="drop-item">
+                                                            <div class="checkbox-drop">
+                                                                <input class="type_w" type="checkbox" name="rtype-work3" id="rtype3" value="Web development">
+                                                                <label for="rtype3">Web development</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="drop-item">
+                                                            <div class="checkbox-drop">
+                                                                <input class="type_w" type="checkbox" name="rtype-work4" id="rtype4" value="App development">
+                                                                <label for="rtype4">App development</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="drop-item">
+                                                            <div class="checkbox-drop">
+                                                                <input class="type_w" type="checkbox" name="rtype-work5" id="rtype5" value="Branding">
+                                                                <label for="rtype5">Branding</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-row two-col">
+                                    <div class="input-row-inner">
+                                        <input type="text" name="rname">
+                                        <label class="placeholder">Name</label>
+                                    </div>
+                                    <div class="input-row-inner">
+                                        <input type="email" name="remail" required="">
+                                        <label class="placeholder">Email</label>
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="input-row-inner">
+                                        <textarea name="rmessage"></textarea>
+                                        <label class="placeholder">Message</label>
+                                    </div>
+                                </div>
+                                <div class="input-row btn-row">
+                                    <div class="input-row-inner">
+                                        <!--                                        <input type="submit" value="Send Message" id="send-form">-->
+                                        <button type="button" id="send-formr" class="link__left-line">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="result_form_modal"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="main-content">
+        <section class="contact-section page-section">
+            <div class="contact-section-inner">
+                <div class="contact-content">
+                    <div class="contact-content-inner">
+                        <a href="#" class="back-link">
+                            <span class="link__left-line">Back</span>
+                        </a>
+                        <div class="form-block">
+                            <div class="form-block-inner">
+                                <h1 class="h1">Interested In <br> Our Services?</h1>
+                                <p>Just fill this short form</p>
+                                <form id="ajaxform" method="get">
+                                    <div class="input-row">
+                                        <div class="input-row-inner">
+                                            <div class="custom-dropdown">
+                                                <button class="drop-trigger">
+                                              I need … <span>(kind of service)</span>
+                                          </button>
+                                                <div class="drop-list">
+                                                    <div class="drop-list-inner">
+                                                        <div class="drop-item">
+                                                            <div class="checkbox-drop">
+                                                                <input class="type_w" type="checkbox" name="type-work1" id="type1" value="Web design">
+                                                                <label for="type1">Web design</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="drop-item">
+                                                            <div class="checkbox-drop">
+                                                                <input class="type_w" type="checkbox" name="type-work2" id="type2" value="App design">
+                                                                <label for="type2">App design</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="drop-item">
+                                                            <div class="drop-item">
+                                                                <div class="checkbox-drop">
+                                                                    <input class="type_w" type="checkbox" name="type-work3" id="type3" value="Web development">
+                                                                    <label for="type3">Web development</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="drop-item">
+                                                            <div class="drop-item">
+                                                                <div class="checkbox-drop">
+                                                                    <input class="type_w" type="checkbox" name="type-work4" id="type4" value="App development">
+                                                                    <label for="type4">App development</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="drop-item">
+                                                            <div class="drop-item">
+                                                                <div class="checkbox-drop">
+                                                                    <input class="type_w" type="checkbox" name="type-work5" id="type5" value="Branding">
+                                                                    <label for="type5">Branding</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-row two-col">
+                                        <div class="input-row-inner">
+                                            <input type="text" name="name">
+                                            <label class="placeholder">Name</label>
+                                        </div>
+                                        <div class="input-row-inner">
+                                            <input type="email" name="email" required="">
+                                            <label class="placeholder">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-row">
+                                        <div class="input-row-inner">
+                                            <textarea name="message"></textarea>
+                                            <label class="placeholder">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-row btn-row">
+                                        <div class="input-row-inner">
+                                            <!--                                        <input type="submit" value="Send Message" id="send-form">-->
+                                            <button type="button" id="send-form" class="link__left-line">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div id="result_form"></div>
+                            </div>
+                        </div>
+                        <div class="clock-block">
+                            <div class="clock-block-inner">
+                                <div class="clock-item active-clock clock-usa">
+                                    <div id="app-houston">
+                                        <div class="clock">
+                                            <div class="steps"></div>
+                                            <div class="steps"></div>
+                                            <div class="steps"></div>
+                                            <div class="steps"></div>
+                                            <div class="steps"></div>
+                                            <div class="steps"></div>
+                                            <div class="hour" v-bind:style="{transform: 'rotate(' + hourDeg + ')'}"> </div>
+                                            <div class="min" v-bind:style="{transform: 'rotate(' + minsDeg + ')'}"></div>
+                                            <div class="sec" v-bind:style="{transform: 'rotate(' + secsDeg + ')'}"></div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-content-block">
+                                        <div class="title-row">Lorem ipsun</div>
+                                        <div class="for-slide-toggle">
+                                            <div class="address-row">Lorem ipsun Lorem ipsun Lorem ipsun</div>
+                                            <div class="phone-row">
+                                                <a href="tel:+12816029912">+985 7848748</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clock-item clock-uk">
+                                    <div id="app-ukraine">
+                                        <div class="clock">
+                                            <div class="steps"></div>
+                                            <div class="steps"></div>
+                                            <div class="steps"></div>
+                                            <div class="steps"></div>
+                                            <div class="steps"></div>
+                                            <div class="steps"></div>
+                                            <div class="hour" v-bind:style="{transform: 'rotate(' + hourDeg + ')'}"> </div>
+                                            <div class="min" v-bind:style="{transform: 'rotate(' + minsDeg + ')'}"></div>
+                                            <div class="sec" v-bind:style="{transform: 'rotate(' + secsDeg + ')'}"></div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-content-block">
+                                        <div class="title-row">Lorem ipsun</div>
+                                        <div class="for-slide-toggle">
+                                            <div class="address-row">Lorem ipsun</div>
+                                            <div class="phone-row">
+                                                <a href="tel:+380957803999">+27 89 45897454</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maps-block">
+                            <div class="maps-block-inner">
+                                <div class="overlay-maps"></div>
+                                <div class="map-conatact" id="houston-map"></div>
+                                <div class="map-conatact-abs" id="ukraine-map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="contact-block-mail">
+                        <div class="title_b_m">Or contact us on Email</div>
+                        <a href="mailto:info@tino.agency" class="email-link hover-link">info@tino.agency</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <app-footer></app-footer>
+    <script>
+        function initMap() {
+            var map0 = new google.maps.Map(document.getElementById('houston-map'), {
+                zoom: 16,
+                center: {
+                    lat: 46.471534,
+                    lng: 30.7481013
+                },
+                zoomControl: false,
+                mapTypeControl: false,
+                styles: [{
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "saturation": 36
+                    }, {
+                        "color": "#000000"
+                    }, {
+                        "lightness": 40
+                    }]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "color": "#000000"
+                    }, {
+                        "lightness": 16
+                    }]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 20
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 17
+                    }, {
+                        "weight": 1.2
+                    }]
+                }, {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 20
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 21
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 17
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 29
+                    }, {
+                        "weight": 0.2
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 18
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 16
+                    }]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 19
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 17
+                    }]
+                }]
+            });
+            var map1 = new google.maps.Map(document.getElementById('ukraine-map'), {
+                zoom: 16,
+                center: {
+                    lat: 35.5576287,
+                    lng: -89.1481444
+                },
+                zoomControl: false,
+                mapTypeControl: false,
+                styles: [{
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "saturation": 36
+                    }, {
+                        "color": "#000000"
+                    }, {
+                        "lightness": 40
+                    }]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "color": "#000000"
+                    }, {
+                        "lightness": 16
+                    }]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 20
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 17
+                    }, {
+                        "weight": 1.2
+                    }]
+                }, {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 20
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 21
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 17
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 29
+                    }, {
+                        "weight": 0.2
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 18
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 16
+                    }]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 19
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 17
+                    }]
+                }]
+            });
+
+            var image = {
+                url: '/images/marker.svg',
+                size: new google.maps.Size(240, 240),
+                scaledSize: new google.maps.Size(240, 240),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(120, 120)
+
+            };
+
+            var beachMarker = new google.maps.Marker({
+                position: {
+                    lat: 46.471534,
+                    lng: 30.7481013
+                },
+                map: map0,
+                icon: image
+            });
+            var beachMarker2 = new google.maps.Marker({
+                position: {
+                    lat: 29.5536287,
+                    lng: -95.1481444
+                },
+                map: map1,
+                icon: image
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqYmu3NXfq3fDpEtfZYaHc69V2q1Jg7mY&callback=initMap" async="" defer=""></script>
+
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-133910214-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133910214-1');
+    </script>
+
+
+</body>
+
+<script>
+    var app = new Vue({
+        el: '#app-houston',
+        data: {
+            appTitle: 'Vue Clock',
+            hour: '--',
+            hourDeg: '0deg',
+            mins: '--',
+            minsDeg: '0deg',
+            secs: '--',
+            secsDeg: '0deg'
+        },
+        created() {
+            this.updateClock();
+        },
+        methods: {
+            updateClock() {
+                var ctx = this;
+                setInterval(function() {
+                    var date = new Date(),
+                        hour = date.getHours() - 8,
+                        min = date.getMinutes(),
+                        sec = date.getSeconds();
+
+                    // Set Display
+                    ctx.hour = (hour < 10) ? '0' + hour : hour;
+                    ctx.mins = (min < 10) ? '0' + min : min;
+                    ctx.secs = (sec < 10) ? '0' + sec : sec;
+
+                    // Set Analog
+                    var analogHour = (hour > 12) ? hour - 12 : hour,
+                        analogMins = min,
+                        analogSecs = sec;
+
+                    ctx.hourDeg = (analogHour * 30) + 'deg';
+                    ctx.minsDeg = (analogMins / 60 * 360) + 'deg';
+                    ctx.secsDeg = (analogSecs / 60 * 360) + 'deg';
+                }, 1000);
+            }
+        }
+    });
+    var app_ukraine = new Vue({
+        el: '#app-ukraine',
+        data: {
+            appTitle: 'Vue Clock',
+            hour: '--',
+            hourDeg: '0deg',
+            mins: '--',
+            minsDeg: '0deg',
+            secs: '--',
+            secsDeg: '0deg'
+        },
+        created() {
+            this.updateClock();
+        },
+        methods: {
+            updateClock() {
+                var ctx = this;
+                setInterval(function() {
+                    var date = new Date(),
+                        hour = date.getHours(),
+                        min = date.getMinutes(),
+                        sec = date.getSeconds();
+
+                    // Set Display
+                    ctx.hour = (hour < 10) ? '0' + hour : hour;
+                    ctx.mins = (min < 10) ? '0' + min : min;
+                    ctx.secs = (sec < 10) ? '0' + sec : sec;
+
+                    // Set Analog
+                    var analogHour = (hour > 12) ? hour - 12 : hour,
+                        analogMins = min,
+                        analogSecs = sec;
+
+                    ctx.hourDeg = (analogHour * 30) + 'deg';
+                    ctx.minsDeg = (analogMins / 60 * 360) + 'deg';
+                    ctx.secsDeg = (analogSecs / 60 * 360) + 'deg';
+                }, 1000);
+            }
+        }
+    });
+</script>
+
+
+</html>

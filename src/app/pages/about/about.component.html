@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<app-head title="Projects"></app-head>
+
+<body>
+    <app-header></app-header>
+    <div class="tween-menu">
+        <div class="back-menu-wrapper">
+            <div class="back-menu"></div>
+        </div>
+        <div class="tween-menu-inner">
+            <div class="tween-menu-btn">
+                <a href="#" class="tween-menu-trigger menu-trigger-close openMenu target" id="target">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                </a>
+            </div>
+            <div class="container-content-menu">
+                <ul class="tween-menu-list">
+                    <li class="item-menu item-menu1"><a class="load-animation" href="index.htm">Home</a></li>
+                    <li class="item-menu item-menu2"><a class="load-animation" href="projects.html">Project</a></li>
+                    <li class="item-menu item-menu3"><a class="load-animation" href="about.html">About</a></li>
+                    <li class="item-menu item-menu4"><a class="load-animation" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="tween-menu-social main-menu-social">
+                <div class="container">
+                    <ul class="bottom-menu">
+                        <li><a href="https://www.behance.net/designtino" class="hover-link social-menu1" target="_blank">Behance</a></li>
+                        <li><a href="https://dribbble.com/tinodesign" class="hover-link social-menu2" target="_blank">Dribbble</a></li>
+                        <li><a href="https://www.facebook.com/tino.agency/" class="hover-link social-menu3" target="_blank">Facebook</a></li>
+                        <!--<li><a href="#" target="_blank">Twitter</a></li>-->
+                        <li><a href="https://www.linkedin.com/company/tino-digital-agency/" class="hover-link social-menu4" target="_blank">Linkedin</a></li>
+                        <li><a href="https://www.instagram.com/tino.agency/" class="hover-link social-menu5" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-block-modal"></div>
+    <div class="modal-popup" id="main-request">
+        <div class="modal-popup-inner">
+            <button class="close-modal"></button>
+            <div class="success-form">
+                <div class="content-success text-center">
+                    <h3 class="h1">Your Message <br> Was Successfully Sent</h3>
+                    <p>Our manager will contact you soon</p>
+                    <a href="index.htm" class="link__left-line">Back To Website</a>
+                </div>
+            </div>
+            <div class="modal-content">
+                <div class="form-cont">
+                    <div class="form-block">
+                        <div class="form-block-inner">
+                            <h1 class="h1">Interested In <br> Our Services?</h1>
+                            <p>Just fill this short form</p>
+                            <form id="ajaxformR" method="get">
+                                <div class="input-row">
+                                    <div class="input-row-inner">
+                                        <div class="custom-dropdown">
+                                            <button class="drop-trigger">
+                                              I need … <span>(kind of service)</span>
+                                          </button>
+                                            <div class="drop-list">
+                                                <div class="drop-list-inner">
+                                                    <div class="drop-item">
+                                                        <div class="checkbox-drop">
+                                                            <input class="type_w" type="checkbox" name="rtype-work1" id="rtype1" value="Web design">
+                                                            <label for="rtype1">Web design</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="checkbox-drop">
+                                                            <input class="type_w" type="checkbox" name="rtype-work2" id="rtype2" value="App design">
+                                                            <label for="rtype2">App design</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="drop-item">
+                                                            <div class="checkbox-drop">
+                                                                <input class="type_w" type="checkbox" name="rtype-work3" id="rtype3" value="Web development">
+                                                                <label for="rtype3">Web development</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="drop-item">
+                                                            <div class="checkbox-drop">
+                                                                <input class="type_w" type="checkbox" name="rtype-work4" id="rtype4" value="App development">
+                                                                <label for="rtype4">App development</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="drop-item">
+                                                            <div class="checkbox-drop">
+                                                                <input class="type_w" type="checkbox" name="rtype-work5" id="rtype5" value="Branding">
+                                                                <label for="rtype5">Branding</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-row two-col">
+                                    <div class="input-row-inner">
+                                        <input type="text" name="rname">
+                                        <label class="placeholder">Name</label>
+                                    </div>
+                                    <div class="input-row-inner">
+                                        <input type="email" name="remail" required="">
+                                        <label class="placeholder">Email</label>
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="input-row-inner">
+                                        <textarea name="rmessage"></textarea>
+                                        <label class="placeholder">Message</label>
+                                    </div>
+                                </div>
+                                <div class="input-row btn-row">
+                                    <div class="input-row-inner">
+                                        <!--                                        <input type="submit" value="Send Message" id="send-form">-->
+                                        <button type="button" id="send-formr" class="link__left-line">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="result_form_modal"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="main-content">
+        <section class="about-section page-section">
+            <div class="about-section-inner">
+                <div class="container">
+                    <div class="about-title">
+                        <h1>About Agency</h1>
+                        <h3>We do high quality <br> design & development</h3>
+                    </div>
+                    <div class="text-home about-text">
+                        <p>Here we should talk about us. About experience, we have behind, how many finished projects have become the best objects of our portfolio. And the most importantly - how many of them successfully function from the moment of creation
+                            to this day. We will answer nontrivially. That's enough. Enough to be confident in our abilities.
+                        </p>
+                        <p>Quite a lot to say that we will manage any task which is given to us. Why? We live at <a href="#" class="link-with-image" onclick="return false;">work <span class="image-fo-l"><img src="..\..\assets\images\img-work@2x.jpg" alt=""></span></a>.
+                            We live by the idea. We live in the future. Each new project for us is a new universe, which we create from a sketch. The universe into which we are forced to believe your customers.
+                            <a href="#" class="link-with-image" onclick="return false;">Website <span class="image-fo-l"><img src="..\..\assets\images\img-web@2x.jpg" alt=""></span></a> or an <a href="#" class="link-with-image" onclick="return false;">application <span class="image-fo-l"><img src="..\..\assets\images\img-app@2x.jpg" alt=""></span></a>                            created by us - is exactly what your client is looking for. How are we different from others? Our projects are working. All. Without exception. We know exactly what a person needs on the other side of the screen.</p>
+                    </div>
+                    <div class="service-list">
+                        <div class="service-list-inner">
+                            <div class="service-block">
+                                <div class="service-block-inner">
+                                    <div class="title-service">
+                                        <h3 class="h1">Design</h3>
+                                    </div>
+                                    <div class="servises">
+                                        <ul>
+                                            <li>UX Design</li>
+                                            <li>UI Design</li>
+                                            <li>Design Concept</li>
+                                        </ul>
+                                    </div>
+                                    <div class="image_effect">
+                                        <img class="next-particle" id="design-effect" data-mouse-force="20" data-width="300" data-height="300" data-max-width="117" data-max-height="160" data-particle-gap="2" src="..\..\assets\images\D.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-block">
+                                <div class="service-block-inner">
+                                    <div class="title-service">
+                                        <h3 class="h1">Branding</h3>
+                                    </div>
+                                    <div class="servises">
+                                        <ul>
+                                            <li>Logo Design</li>
+                                            <li>Visual Identity</li>
+                                            <li>Brand Guidelines</li>
+                                        </ul>
+                                    </div>
+                                    <div class="image_effect left-bg-back">
+                                        <img class="next-particle" id="design-effect" data-mouse-force="20" data-width="300" data-height="300" data-max-width="117" data-max-height="160" data-particle-gap="2" src="..\..\assets\images\B.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-block">
+                                <div class="service-block-inner">
+                                    <div class="title-service">
+                                        <h3 class="h1">Development</h3>
+                                    </div>
+                                    <div class="servises">
+                                        <ul>
+                                            <li>Front-end Development</li>
+                                            <li>Back-end Development</li>
+                                            <li>iOS & Android Development</li>
+                                        </ul>
+                                    </div>
+                                    <div class="image_effect">
+                                        <img class="next-particle" id="design-effect" data-mouse-force="20" data-width="300" data-height="300" data-max-width="117" data-max-height="160" data-particle-gap="2" src="..\..\assets\images\D.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="citate-section">
+                        <div class="citate-block">
+                            <div class="citate-block-inner">
+                                <div class="text-quote">
+                                    <p>How are we different from other agencies? Tino Agency is a family where everyone is motivated to show off their skills. All our projects are successful without exception. The reason is simple – we care about our clients
+                                        and make sure you get exactly what you need.</p>
+                                </div>
+                                <div class="author-qoute">
+                                    <div class="image-quote">
+                                        <div class="image-round">
+                                            <video autoplay="" loop="" muted="">
+                                              <source src="video\tino-fish-re.mp4" type="video/mp4">
+                                              <!--                                            <source src="PATH_TO_WEBM" type="video/webm" />-->
+                                          </video>
+                                        </div>
+                                    </div>
+                                    <div class="name-auth">
+                                        <h4>Tino</h4>
+                                        <span>Office fish</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-block line-in-content">
+                    <div class="line-bg line-bg1"></div>
+                    <div class="line-bg line-bg2"></div>
+                    <div class="line-bg line-bg3"></div>
+                    <div class="line-bg line-bg4"></div>
+                    <div class="line-bg line-bg5"></div>
+                    <div class="partner-block-inner">
+                        <div class="container">
+                            <div class="partner-list">
+                                <div class="partner-item">
+                                    <div class="partner-item-inner">
+                                        <img src="..\..\assets\images\oikaa.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-item-inner">
+                                        <img src="..\..\assets\images\kgo.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-item-inner">
+                                        <img src="..\..\assets\images\z25.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-item-inner">
+                                        <img src="..\..\assets\images\mindnow.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-item-inner">
+                                        <img src="..\..\assets\images\kepler.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-item-inner">
+                                        <img src="..\..\assets\images\dominanta.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-item-inner">
+                                        <img src="..\..\assets\images\vr.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-item-inner">
+                                        <img src="..\..\assets\images\driver-legend.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="prefooter-block">
+        <div class="email-block">
+            <a href="mailto:info@tino.agency" class="hover-link">info@tino.agency</a>
+        </div>
+        <div class="btn-block">
+            <a href="#" class="btn-form-feedback btn-abs">
+                <span class="dot-btn dot-btn1"></span>
+                <span class="dot-btn dot-btn2"></span>
+                <span class="dot-btn dot-btn3"></span>
+            </a>
+        </div>
+    </div>
+    <div class="link-for-about-block">
+        <a href="projects.html" class="h1 pr-link-big">
+            <span class="show-text line-in-content">
+              <div class="line-bg line-bg1"></div>
+              <div class="line-bg line-bg2"></div>
+              <div class="line-bg line-bg3"></div>
+              <div class="line-bg line-bg4"></div>
+              <div class="line-bg line-bg5"></div>
+              <b>Our Projects</b>
+          </span>
+            <span class="hide-text line-in-content">
+              <div class="line-bg line-bg1"></div>
+              <div class="line-bg line-bg2"></div>
+              <div class="line-bg line-bg3"></div>
+              <div class="line-bg line-bg4"></div>
+              <div class="line-bg line-bg5"></div>
+              <b>Our Projects</b>
+          </span>
+        </a>
+    </div>
+    <app-footer></app-footer>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-133910214-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133910214-1');
+    </script>
+
+
+</body>
+
+
+</html>

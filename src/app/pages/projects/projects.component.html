@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<app-head title="Projects"></app-head>
+
+<body>
+    <app-header></app-header>
+    <div class="tween-menu">
+        <div class="back-menu-wrapper">
+            <div class="back-menu"></div>
+        </div>
+        <div class="tween-menu-inner">
+            <div class="tween-menu-btn">
+                <a href="#" class="tween-menu-trigger menu-trigger-close openMenu target" id="target">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                </a>
+            </div>
+            <div class="container-content-menu">
+                <ul class="tween-menu-list">
+                    <li class="item-menu item-menu1"><a class="load-animation" href="index.htm">Home</a></li>
+                    <li class="item-menu item-menu2"><a class="load-animation" href="projects.html">Project</a></li>
+                    <li class="item-menu item-menu3"><a class="load-animation" href="about.html">About</a></li>
+                    <li class="item-menu item-menu4"><a class="load-animation" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="tween-menu-social main-menu-social">
+                <div class="container">
+                    <ul class="bottom-menu">
+                        <li><a href="https://www.behance.net/designtino" class="hover-link social-menu1" target="_blank">Behance</a></li>
+                        <li><a href="https://dribbble.com/tinodesign" class="hover-link social-menu2" target="_blank">Dribbble</a></li>
+                        <li><a href="https://www.facebook.com/tino.agency/" class="hover-link social-menu3" target="_blank">Facebook</a></li>
+                        <!--<li><a href="#" target="_blank">Twitter</a></li>-->
+                        <li><a href="https://www.linkedin.com/company/tino-digital-agency/" class="hover-link social-menu4" target="_blank">Linkedin</a></li>
+                        <li><a href="https://www.instagram.com/tino.agency/" class="hover-link social-menu5" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-block-modal"></div>
+    <div class="modal-popup" id="main-request">
+        <div class="modal-popup-inner">
+            <button class="close-modal"></button>
+            <div class="success-form">
+                <div class="content-success text-center">
+                    <h3 class="h1">Your Message <br> Was Successfully Sent</h3>
+                    <p>Our manager will contact you soon</p>
+                    <a href="index.htm" class="link__left-line">Back To Website</a>
+                </div>
+            </div>
+            <div class="modal-content">
+                <div class="form-cont">
+                    <div class="form-block">
+                        <div class="form-block-inner">
+                            <h1 class="h1">Interested In <br> Our Services?</h1>
+                            <p>Just fill this short form</p>
+                            <form id="ajaxformR" method="get">
+                                <div class="input-row">
+                                    <div class="input-row-inner">
+                                        <div class="custom-dropdown">
+                                            <button class="drop-trigger">
+                                          I need â€¦ <span>(kind of service)</span>
+                                      </button>
+                                            <div class="drop-list">
+                                                <div class="drop-list-inner">
+                                                    <div class="drop-item">
+                                                        <div class="checkbox-drop">
+                                                            <input class="type_w" type="checkbox" name="rtype-work1" id="rtype1" value="Web design">
+                                                            <label for="rtype1">Web design</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="checkbox-drop">
+                                                            <input class="type_w" type="checkbox" name="rtype-work2" id="rtype2" value="App design">
+                                                            <label for="rtype2">App design</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="drop-item">
+                                                            <div class="checkbox-drop">
+                                                                <input class="type_w" type="checkbox" name="rtype-work3" id="rtype3" value="Web development">
+                                                                <label for="rtype3">Web development</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="drop-item">
+                                                            <div class="checkbox-drop">
+                                                                <input class="type_w" type="checkbox" name="rtype-work4" id="rtype4" value="App development">
+                                                                <label for="rtype4">App development</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drop-item">
+                                                        <div class="drop-item">
+                                                            <div class="checkbox-drop">
+                                                                <input class="type_w" type="checkbox" name="rtype-work5" id="rtype5" value="Branding">
+                                                                <label for="rtype5">Branding</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-row two-col">
+                                    <div class="input-row-inner">
+                                        <input type="text" name="rname">
+                                        <label class="placeholder">Name</label>
+                                    </div>
+                                    <div class="input-row-inner">
+                                        <input type="email" name="remail" required="">
+                                        <label class="placeholder">Email</label>
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="input-row-inner">
+                                        <textarea name="rmessage"></textarea>
+                                        <label class="placeholder">Message</label>
+                                    </div>
+                                </div>
+                                <div class="input-row btn-row">
+                                    <div class="input-row-inner">
+                                        <!--                                        <input type="submit" value="Send Message" id="send-form">-->
+                                        <button type="button" id="send-formr" class="link__left-line">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="result_form_modal"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="main-content">
+        <section class="project-section page-section">
+            <div class="project-section-inner">
+                <div class="container">
+                    <div class="title-project-page">
+                        <h1 class="h1">Our Projects</h1>
+                        <p>We do</p>
+                    </div>
+                </div>
+                <section class="slideshow tween-slider">
+                    <div class="slideshow-inner">
+                        <div class="slides">
+                            <div class="slide first-slide is-active">
+                                <div class="slide-content">
+                                    <a href="https://www.behance.net/gallery/67351825/Look-My-Bet-Sport-Social-Network" class="lin-work" target="_blank">
+                                        <div class="content-slide-project">
+                                            <ul class="tags-project">
+                                                <li>#ux/ui design</li>
+                                                <li>#development</li>
+                                            </ul>
+                                            <div class="caption">
+                                                <div class="title">Look My Bet</div>
+                                                <div class="text">
+                                                    <p>Sport Social Network</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="image-container">
+                                    <img src="..\..\assets\images\lmb-cover@2x.jpg" alt="" class="image">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <a href="https://www.behance.net/gallery/66688317/Mobile-App-Design-for-Kids-Driving-Service" class="lin-work" target="_blank">
+                                        <div class="content-slide-project">
+                                            <ul class="tags-project">
+                                                <li>#ux/ui design</li>
+                                                <li>#development</li>
+                                                <li>#Mobile App</li>
+                                            </ul>
+                                            <div class="caption">
+                                                <div class="title">K&Go</div>
+                                                <div class="text">
+                                                    <p>Mobile App</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="image-container">
+                                    <img src="..\..\assets\images\k&go-cover@2x.jpg" alt="" class="image">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <a href="https://www.behance.net/gallery/62819037/Web-design-for-AWM-online-store" class="lin-work" target="_blank">
+                                        <div class="content-slide-project">
+                                            <ul class="tags-project">
+                                                <li>#ux/ui design</li>
+                                                <li>#development</li>
+                                            </ul>
+                                            <div class="caption">
+                                                <div class="title">AWM</div>
+                                                <div class="text">
+                                                    <p>Shop</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="image-container">
+                                    <img src="..\..\assets\images\AWM-cover@2x.jpg" alt="" class="image">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <a href="https://www.behance.net/gallery/61246117/Landing-Page-for-Wood-Hills-Master-Planned-Community" class="lin-work dark-link" target="_blank">
+                                        <div class="content-slide-project">
+                                            <ul class="tags-project dart-text">
+                                                <li>#ux/ui design</li>
+                                                <li>#development</li>
+                                            </ul>
+                                            <div class="caption">
+                                                <div class="title">Woodhills</div>
+                                                <div class="text">
+                                                    <p>Landing Pager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="image-container">
+                                    <img src="..\..\assets\images\woodhills-cover@2x.jpg" alt="" class="image">
+                                </div>
+                            </div>
+                            <div class="slide last-slide">
+                                <div class="slide-content">
+                                    <a href="https://www.behance.net/gallery/68916703/Zerkalo-25-Brand-Identity-for-Beauty-Studio" class="lin-work" target="_blank">
+                                        <div class="content-slide-project">
+                                            <ul class="tags-project">
+                                                <li>#branding</li>
+                                            </ul>
+                                            <div class="caption">
+                                                <div class="title">Z25</div>
+                                                <div class="text">
+                                                    <p>Branding</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="image-container">
+                                    <img src="..\..\assets\images\z25-cover@2x.jpg" alt="" class="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <div class="item is-active">
+                                <span class="icon">1</span>
+                            </div>
+                            <div class="item">
+                                <span class="icon">2</span>
+                            </div>
+                            <div class="item">
+                                <span class="icon">3</span>
+                            </div>
+                            <div class="item">
+                                <span class="icon">4</span>
+                            </div>
+                        </div>
+                        <div class="arrows">
+                            <div class="arrow prev">
+                                <span class="svg svg-arrow-left">
+          <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewbox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"></path> </svg>
+          <span class="alt sr-only"></span>
+                                </span>
+                            </div>
+                            <div class="arrow next">
+                                <span class="svg svg-arrow-right">
+          <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewbox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"></path> </svg>
+          <span class="alt sr-only"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--            <div class="project-slider">-->
+                <!--                <button class="next-project project-slider-nav">-->
+                <!--                    <span class="link__left-line">Next</span>-->
+                <!--                </button>-->
+                <!--                <button class="prev-project project-slider-nav">-->
+                <!--                    <span class="link__left-line">Prev</span>-->
+                <!--                </button>-->
+                <!--                <div class="project-slider-inner">-->
+                <!--                    <div class="slider-scrolled">-->
+                <!--                        -->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </div>-->
+            </div>
+        </section>
+    </main>
+    <app-footer></app-footer>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-133910214-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133910214-1');
+    </script>
+
+
+</body>
+
+
+</html>

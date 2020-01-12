@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="117px" height="160px" viewBox="0 0 117 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>D</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M34.3181818,0 C90.4545455,0 116.363636,37.7272727 116.363636,80 C116.363636,122.272727 89.0909091,160 34.3181818,160 L0,160 L0,0 L34.3181818,0 Z M39.5454545,132.727273 C68.1818182,132.727273 87.2727273,106.818182 87.2727273,80 C87.2727273,53.1818182 68.1818182,27.2727273 39.5454545,27.2727273 L29.0909091,27.2727273 L29.0909091,132.727273 L39.5454545,132.727273 Z" id="path-1"></path>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tino-About" transform="translate(-966.000000, -1698.000000)">
+            <g id="txt" transform="translate(120.000000, 298.000000)">
+                <g id="D" transform="translate(846.000000, 1360.000000)">
+                    <g id="1" transform="translate(0.000000, 40.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="D" fill="#282828" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
